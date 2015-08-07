@@ -1,0 +1,12 @@
+parameters: []
+
+services:
+    handlers.login_with_facebook:
+        class: UserBundle\Handler\LoginWithFacebookCommandHandler
+        arguments:
+            - @helpers.facebook_auth
+            - @fos_user.user_manager
+            - @helpers.user_login
+            - @router
+        tags:
+            - { name: command_handler, handles: login_with_facebook }

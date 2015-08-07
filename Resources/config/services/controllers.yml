@@ -1,0 +1,10 @@
+parameters: []
+
+services:
+    controllers.oauth_security:
+        class: UserBundle\Controller\OAuthSecurityController
+        arguments:
+            - @helpers.facebook_auth
+            - @fos_user.user_manager
+            - @helpers.user_login
+            - @router

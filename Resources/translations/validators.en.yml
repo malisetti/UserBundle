@@ -1,0 +1,48 @@
+user:
+   firstname:
+        blank: Please enter the first name.
+        short: The first name is too short.
+        long: The first name is too long.
+        invalid: Please enter a valid first name.
+   lastname:
+        blank: Please enter the last name.
+        short: The last name is too short.
+        long: The last name is too long.
+        invalid: Please enter a valid last name.
+   address:
+        blank: Please enter the address.
+        short: The address is too short.
+        long: The address is too long.
+   city:
+        blank: Please enter the city.
+        short: The City name is too short.
+        long: The City name is too long.
+        pattern: This city name is not valid.
+   state:
+        blank: Please enter the state.
+        short: The state name is too short.
+        long: The state name is too long.
+        pattern: This state name is not valid.
+   country:
+        blank: Please enter the country.
+        short: The country name is too short.
+        long: The country name is too long.
+        pattern: This country name is not valid.
+   dob:
+        blank: Please enter your date of birth.
+
+#translation for fosuserbundle
+fos_user:
+    password:
+        mismatch: Retyped password do not match.
+        current: Please enter your current password.
+        pattern: Password should contain at least 6 characters, 1 number with no spaces.
+    email:
+        invalid: Please enter a valid email address.
+
+#translation
+invitation:
+    email:
+        blank: Please enter the email address.
+        invalid: Please enter a valid email address.
+    submit: Invite

@@ -1,0 +1,12 @@
+parameters: []
+
+services:
+    helpers.facebook_auth:
+        class: UserBundle\Helper\FacebookAuthCodeFlowHelper
+        arguments: ["%facebook_app_id%", "%facebook_app_secret%"]
+
+    helpers.user_login:
+        class: UserBundle\Helper\UserLoginHelper
+        arguments:
+            - @security.token_storage
+            - @event_dispatcher

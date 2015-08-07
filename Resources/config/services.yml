@@ -1,0 +1,10 @@
+imports:
+    - { resource: services/controllers.yml }
+    - { resource: services/handlers.yml }
+    - { resource: services/event_listeners.yml }
+    - { resource: services/helpers.yml }
+    - { resource: services/forms.yml }
+
+parameters: []
+
+services: []

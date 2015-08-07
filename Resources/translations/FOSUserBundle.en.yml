@@ -1,0 +1,68 @@
+#overriding FOSUSerBundle Translation messages
+form:
+    email: "Email Address"
+    firstname: "First Name"
+    phone: "Phone Number"
+    pin: "PIN Code"
+    lastname: "Last Name"
+    password: "Password"
+    password_confirmation: "Confirm Password"
+    address1: "Street"
+    address2: "Landmark"
+    city: "City"
+    state: "State"
+    name: Name
+
+file:
+    submit: Upload
+    name: Name of file
+    select: Choose File
+
+#security
+"Bad credentials": Invalid email address or password
+
+security:
+    login:
+        username: "Email Address"
+        password: "Password"
+
+#registration
+registration:
+    confirmed: Congratulations! Your account %username% is now activated.
+    submit: Sign Up
+
+#registration
+registration:
+    email:
+        subject: Welcome %username%!
+        message: |
+            Hello %username%!
+
+            To finish activating your account - please click or copy & paste this link %confirmationUrl% in your browser.
+
+            Regards,
+            Lazycat Team.
+
+
+resetting:
+    # Password resetting
+    password_already_requested: The password for this user has already been requested within the last 24 hours.
+    check_email: An email has been sent to %email%. It contains a link you must click on to reset your password.
+    request:
+        invalid_username: The username or email address "%username%" does not exist.
+        username: "Email address:"
+        submit: Reset password
+        blank_username: Please enter the email address
+    reset:
+        submit: Change password
+    flash:
+        success: The password has been reset successfully
+    email:
+        subject: Reset Password
+        message: |
+            Hello %username%!
+
+            To reset your password - please visit %confirmationUrl% or copy and paste this link to your browser.
+
+            Regards,
+            Lazycat Team

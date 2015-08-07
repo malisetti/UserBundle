@@ -1,0 +1,3 @@
+facebook_login:
+    path: /login/facebook
+    defaults:  { _controller: controllers.oauth_security:facebookLoginAction }

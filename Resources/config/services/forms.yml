@@ -1,0 +1,12 @@
+parameters: []
+
+services:
+    forms.app_user.registration_type:
+        class: UserBundle\Form\Type\RegistrationFormType
+        tags:
+            - { name: form.type, alias: app_user_registration }
+
+    forms.app_user.profile_type:
+        class: UserBundle\Form\Type\ProfileFormType
+        tags:
+            - { name: form.type, alias: app_user_profile }
